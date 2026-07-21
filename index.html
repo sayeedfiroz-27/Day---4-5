@@ -169,9 +169,17 @@
           <strong>Day 4 - Mini Project 1</strong>
           <span>Student Marks Management System with input, marks calculation, percentage, grade, result display, and report generation.</span>
         </button>
+        <button class="doc-card" type="button" data-doc="day4expanded">
+          <strong>Day 4 - Expanded Practice</strong>
+          <span>Extra 2-3 practice examples for every project feature with more detailed Hinglish code explanation.</span>
+        </button>
         <button class="doc-card" type="button" data-doc="day5">
           <strong>Day 5 - Functions, Strings & Data Structures</strong>
           <span>Functions, parameters, return, lambda, strings, lists, tuples, dictionaries, and sets with code explanations.</span>
+        </button>
+        <button class="doc-card" type="button" data-doc="day5expanded">
+          <strong>Day 5 - Expanded Practice</strong>
+          <span>More practice codes for every Day 5 topic with output and simple line-by-line explanation.</span>
         </button>
       </section>
       <article id="content">
@@ -185,7 +193,9 @@
     const cards = Array.from(document.querySelectorAll(".doc-card"));
     const documents = {
       day4: { title: "Day 4 - Student Marks Management System", file: "day4_student_marks_management_system.md" },
-      day5: { title: "Day 5 - Functions, Strings & Data Structures", file: "day5_functions_strings_data_structures.md" }
+      day4expanded: { title: "Day 4 - Expanded Practice", file: "day4_expanded_practice.md" },
+      day5: { title: "Day 5 - Functions, Strings & Data Structures", file: "day5_functions_strings_data_structures.md" },
+      day5expanded: { title: "Day 5 - Expanded Practice", file: "day5_expanded_practice.md" }
     };
     marked.setOptions({ gfm: true, breaks: false });
     function setActiveCard(docKey) {
