@@ -173,6 +173,10 @@
           <strong>Day 5 - Functions, Strings & Data Structures</strong>
           <span>Functions, parameters, return, lambda, strings, lists, tuples, dictionaries, and sets with code explanations.</span>
         </button>
+        <button class="doc-card" type="button" data-doc="practice">
+          <strong>Student Practice Tasks</strong>
+          <span>Task-first practice sheet with solution code, output, and detailed line-by-line Hinglish explanation.</span>
+        </button>
       </section>
       <article id="content">
         <p class="loading">Choose Day 4 or Day 5 from the sidebar to open the notes.</p>
@@ -185,7 +189,8 @@
     const cards = Array.from(document.querySelectorAll(".doc-card"));
     const documents = {
       day4: { title: "Day 4 - Student Marks Management System", file: "day4_student_marks_management_system.md" },
-      day5: { title: "Day 5 - Functions, Strings & Data Structures", file: "day5_functions_strings_data_structures.md" }
+      day5: { title: "Day 5 - Functions, Strings & Data Structures", file: "day5_functions_strings_data_structures.md" },
+      practice: { title: "Student Practice Tasks", file: "student_practice_tasks.md" }
     };
     marked.setOptions({ gfm: true, breaks: false });
     function setActiveCard(docKey) {
